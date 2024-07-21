@@ -36,9 +36,9 @@ Participants were tasked with creating a secure framework for sharing data betwe
 
 ## Repository Structure
 - **DataCleanRoom/**: Contains scripts and documentation related to setting up the data clean room and managing the confidential VM.
-- **task1/**: Includes data visualization scripts and outputs.
-- **task2/**: Contains data cleaning, feature engineering, and model training scripts.
-- **task3/**: Includes scripts for generating synthetic data.
+- **task 1 - Data Visualization/**: Includes data visualization scripts and outputs.
+- **task 2 - Data Cleaning and Model Training/**: Contains data cleaning, feature engineering, and model training scripts.
+- **task 3 - Generating Synthetic Data/**: Includes scripts for generating synthetic data.
 - **presentation/**: Contains the project presentation files.
 
 ## Getting Started
@@ -70,12 +70,6 @@ This directory contains scripts and notebooks for generating synthetic data to e
 - **GAN_M9.ipynb**: Jupyter Notebook for the GAN model (version M9).
 - **gan_2.ipynb**: Jupyter Notebook for the GAN model (version 2).
 - **synthetic_data.csv**: CSV file containing the generated synthetic data.
-
-## Team Members
-- Lucas Chin - Synthetic Data and Modeling
-- Chloe Houvardas - Data Clean Room and VM
-- Chi Lu - CTR and Predictive Modeling
-- Daivya Shah - Data Analysis & Visualization
 
 ## Contact
 For any questions, please reach out to dts7992@nyu.edu.
