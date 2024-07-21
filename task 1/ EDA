@@ -1,0 +1,55 @@
+import pandas as pd
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+from mlxtend.feature_selection import SequentialFeatureSelector as SFS
+
+
+
+
+tdf = pd.read_csv(r'...\train_data_ads.csv')
+tda = pd.read_csv(r"...\train_data_feeds.csv")
+df_feeds.head()
+df_ads.head()
+
+tdf.rename(columns={'u_userId': 'user_id'}, inplace=True)  # If 'userIDD' exists in dataset A
+tda.rename(columns={'user_id': 'user_id'}, inplace=True)  # If 'userIDD' exists in dataset A
+
+tda = tda.sample(frac= 0.0001)#remove this row in real process
+tdf = tdf.sample(frac= 0.0001)#remove this row in real process
+
+
+#merge data by user_id
+merged_data = pd.merge(tda, tdf, on='user_id', how='outer', suffixes=('_A', '_B'))
+
+# create a feature indicating if the user clicked on the ad (i.e., userID exists in both datasets)
+merged_data['clicked'] = merged_data.apply(lambda row: row['user_id'] in tda['user_id'].values and row['user_id'] in tdf['user_id'].values, axis=1)
+merged_data.fillna(0, inplace=True )
+
+
+
+
+X = merged_data.drop('clicked', axis=1)  
+y = merged_data['clicked']
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+#find out which variable combination is the best
+#There is still problem in this regression
+model = LogisticRegression()
+sfs = SFS(model, 
+          k_features='best', 
+          forward=True, 
+          floating=False, 
+          scoring='accuracy',
+          cv=5)
+
+sfs = sfs.fit(X_train, y_train)
+
+#print the result
+best_features = list(sfs.k_feature_names_)
+print("Best features:", best_features)
+model.fit(X_train[best_features], y_train)
+y_pred = model.predict(X_test[best_features])
+print("Accuracy:", accuracy_score(y_test, y_pred))
