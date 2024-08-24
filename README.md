@@ -1,3 +1,4 @@
+# Trustworthy AI Lab X GES UCLA Hackathon
 # Enhancing CTR Predictions through a Data Clean Room
 
 ## Project Overview
