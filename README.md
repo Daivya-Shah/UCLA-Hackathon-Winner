@@ -17,6 +17,8 @@ The Global Entrepreneurship Society (GES) at UCLA (formerly Three Day Startup) i
 
 ### Project Prompt
 Participants were tasked with creating a secure framework for sharing data between publishers and advertisers, aiming to develop more accurate predictive models for CTR. The project involved integrating heterogeneous data sources, ensuring data privacy, and demonstrating the utility of cross-party data collaboration without direct data exposure.
+https://docs.google.com/document/d/1-SpZ2NWVQix0dEYfMaBKvXFI5MRIp2-nDeOiCzXfrtw/edit
+
 
 ### Challenges Addressed
 1. **Synthetic Data Fidelity:** Creating synthetic datasets that accurately reflect real-world distributions of user behavior data.
