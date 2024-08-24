@@ -2,7 +2,7 @@
 
 [Hackathon Details](https://dorahacks.io/hackathon/trustworthy-ai-gesucla/detail)
 
-## Project - Enhancing CTR Predictions through a Data Clean Room
+## Enhancing CTR Predictions through a Data Clean Room
 
 ### Project Overview
 This project was developed during the Trustworthy AI Lab x GES UCLA Hackathon. The primary goal was to enhance Click-Through Rate (CTR) predictions by securely combining and analyzing data from publishers and advertisers. By utilizing a confidential computing environment and generating synthetic data, we aimed to improve the accuracy and efficiency of ad targeting while ensuring data privacy and compliance with regulations.
