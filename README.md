@@ -76,6 +76,3 @@ This directory contains scripts and notebooks for generating synthetic data to e
 - **GAN_M9.ipynb**: Jupyter Notebook for GAN model (version M9).
 - **gan_2.ipynb**: Jupyter Notebook for GAN model (version 2).
 - **synthetic_data.csv**: CSV file containing the generated synthetic data.
-
-## Contact
-For any questions, please reach out to dts7992@nyu.edu.
