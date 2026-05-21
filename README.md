@@ -54,7 +54,10 @@ Follow the instructions in each directory to understand the implementation detai
 This directory contains scripts and instructions for setting up a secure data clean room environment using a confidential VM.
 
 - **decrypt.py**: Script to decrypt encrypted data files.
-- **setup_instructions.md**: Step-by-step instructions for setting up the data clean room and managing cryptographic keys.
+- **instructions.md**: Step-by-step instructions for setting up the data clean room and managing cryptographic keys.
+- **instructionsRoundTwo**
+
+https://github.com/Daivya-Shah/cc-tpm-attestation
 
 ### Data Visualization (Task 1)
 This directory contains scripts and notebooks for visualizing data to identify key insights for enhancing CTR predictions.
